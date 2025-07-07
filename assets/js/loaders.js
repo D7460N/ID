@@ -1,4 +1,4 @@
-import { NAV_ITEMS_ENDPOINT } from './config.js';
+import { NAV_ENDPOINT } from './config.js';
 import { fetchJSON } from './fetch.js';
 import { normalizeRecord, normalizeItems } from './schema.js';
 import { inferFieldRules } from './rules.js';
@@ -12,7 +12,7 @@ export function getFieldRules() {
 }
 
 export async function loadNavItems() {
-  const text = await fetchJSON(NAV_ITEMS_ENDPOINT);
+  const text = await fetchJSON(NAV_ENDPOINT);
   const [data] = JSON.parse(text);
   injectNavItems(data);
 }

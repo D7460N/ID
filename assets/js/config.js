@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://686b26fee559eba908719a21.mockapi.io';
+export const BASE_URL = 'https://686b26fee559eba908719a21.mockapi.io/';
 
 export const OPTIONS = {
         showBanner: true,
@@ -6,11 +6,13 @@ export const OPTIONS = {
 };
 
 // API endpoint paths
-export const NAV_ITEMS_ENDPOINT = 'nav';
+export const NAV_ENDPOINT = 'nav';
 export const BANNER_ENDPOINT = 'banner';
 
 // Valid data endpoints referenced in scripts
 export const ENDPOINTS = [
+        'nav',
+        'banner',
         'home',
         'about',
         'classes',
@@ -19,7 +21,6 @@ export const ENDPOINTS = [
         'contact',
         'events',
         'gallery',
-        'nav',
 ];
 
 // Confirmation flags for unsaved change prompts
